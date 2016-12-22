@@ -76,8 +76,7 @@ class MovieList extends React.Component {
   }
 
   fetch() {
-    // const base = 'http://localhost:3000';
-    const base = 'http://localhost:8000';
+    const base = 'http://localhost:3000';
     const url = base + '/movies.json';
     const obj = {
       url,
