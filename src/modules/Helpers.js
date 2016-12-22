@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 function compareImdb(a, b) {
   if (a.imdb_score < b.imdb_score) {
     return -1;
@@ -29,17 +31,7 @@ function compareDate(a, b) {
 }
 
 function formatDate(d) {
-  const monthNames = [
-    'January', 'February', 'March',
-    'April', 'May', 'June', 'July',
-    'August', 'September', 'October',
-    'November', 'December',
-  ];
-  const date = new Date(d);
-  const day = date.getDate();
-  const monthIndex = date.getMonth();
-  const year = date.getFullYear();
-  return `${monthNames[monthIndex]} ${day}, ${year}`;
+  return (moment(d).format('MMMM Do YYYY'));
 }
 
 function formatRunTime(t) {
