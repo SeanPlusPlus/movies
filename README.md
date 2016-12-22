@@ -3,10 +3,9 @@
 ### Getting Started
 
 ```
-git clone git@gitlab.com:SeanPlusPlus1/movies.git
+git clone git@github.com:SeanPlusPlus/movies.git 
 cd movies
 yarn install
 yarn test
 yarn start
 ```
-
